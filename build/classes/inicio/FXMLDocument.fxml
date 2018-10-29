@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="principal" prefHeight="483.0" prefWidth="497.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="inicio.FXMLDocumentController">
+   <children>
+      <AnchorPane fx:id="header" layoutX="20.0" layoutY="14.0" prefHeight="80.0" prefWidth="437.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label fx:id="inicio" layoutX="197.0" layoutY="29.0" text="Inicio" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#1510b5" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="8.0" layoutY="102.0" prefHeight="366.0" prefWidth="497.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="102.0">
+         <children>
+            <AnchorPane fx:id="panelA" layoutY="19.0" prefHeight="74.0" prefWidth="497.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="19.0">
+               <children>
+                  <Button fx:id="botonA" layoutX="169.0" layoutY="34.0" mnemonicParsing="false" onAction="#animales" prefHeight="74.0" prefWidth="179.0" text="Animales" textFill="#7675d1" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="160.0" AnchorPane.rightAnchor="160.0" AnchorPane.topAnchor="10.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="panelF" layoutX="5.0" layoutY="106.0" prefHeight="80.0" prefWidth="497.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="106.0">
+               <children>
+                  <Button fx:id="botonF" layoutX="159.0" layoutY="10.0" mnemonicParsing="false" onAction="#frutas" prefHeight="74.0" prefWidth="179.0" text="Frutas" textFill="#7675d1" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="160.0" AnchorPane.rightAnchor="160.0" AnchorPane.topAnchor="10.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="panelP" layoutX="14.0" layoutY="191.0" prefHeight="80.0" prefWidth="497.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <children>
+                  <Button fx:id="botonP" layoutX="159.0" layoutY="10.0" mnemonicParsing="false" onAction="#paises" prefHeight="74.0" prefWidth="179.0" text="Países" textFill="#7675d1" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="160.0" AnchorPane.rightAnchor="160.0" AnchorPane.topAnchor="10.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="panelS" layoutX="5.0" layoutY="273.0" prefHeight="93.0" prefWidth="465.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <children>
+                  <Button fx:id="salir" layoutX="159.0" layoutY="10.0" mnemonicParsing="false" onAction="#salir" prefHeight="74.0" prefWidth="179.0" text="salir" textFill="#dd453c" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
