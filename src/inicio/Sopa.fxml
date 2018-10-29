@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="533.0" prefWidth="906.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="inicio.SopaController">
+    <stylesheets>
+        <URL value="@sopa.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane prefHeight="98.0" prefWidth="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label fx:id="inicio" alignment="CENTER" contentDisplay="CENTER" layoutX="-2.0" layoutY="3.0" prefHeight="92.0" prefWidth="600.0" textOverrun="CENTER_WORD_ELLIPSIS" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="4.0" layoutY="98.0" prefHeight="301.0" prefWidth="594.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="98.0">
+         <children>
+            <AnchorPane fx:id="centro" layoutX="142.0" prefHeight="409.0" prefWidth="351.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <AnchorPane fx:id="izquierda" prefHeight="404.0" prefWidth="142.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Button fx:id="abandonar"  layoutX="10.0" layoutY="384.0" onAction="#abandonar"  text="Abandonar" />
+                        <ImageView fx:id="uno" fitHeight="66.0" fitWidth="112.0" layoutX="13.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="17.0" AnchorPane.topAnchor="14.0">
+                           <effect>
+                              <Lighting>
+                                 <bumpInput>
+                                    <Shadow />
+                                 </bumpInput>                                 
+                              </Lighting>
+                           </effect>
+                        </ImageView>
+                        <ImageView fx:id="dos" fitHeight="66.0" fitWidth="112.0" layoutX="15.0" layoutY="118.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="17.0" AnchorPane.topAnchor="118.0">
+                        </ImageView>
+                        <ImageView fx:id="tres" fitHeight="55.0" fitWidth="112.0" layoutX="15.0" layoutY="207.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="17.0" AnchorPane.topAnchor="207.0">
+                        </ImageView>
+                        <ImageView fx:id="cuatro" fitHeight="55.0" fitWidth="112.0" layoutX="15.0" layoutY="301.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="17.0" AnchorPane.topAnchor="301.0">
+                        </ImageView>
+                        <Label fx:id="l1" layoutX="50.0" layoutY="94.0" text="Label" textAlignment="CENTER" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+                        <Label fx:id="l2" layoutX="15.0" layoutY="185.0" text="Label" textAlignment="CENTER" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+                        <Label fx:id="l3" layoutX="15.0" layoutY="262.0" text="Label" textAlignment="CENTER" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+                        <Label fx:id="l4" layoutX="43.0" layoutY="356.0" text="Label" textAlignment="CENTER" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+                     </children></AnchorPane>
+                  <AnchorPane fx:id="derecha" layoutX="293.0" prefHeight="404.0" prefWidth="142.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Button fx:id="checa"  layoutX="20.0" layoutY="376.0" onAction="#checa"  text="Terminar" />
+                        <ImageView fx:id="cinco" fitHeight="66.0" fitWidth="112.0" layoutX="17.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="17.0" AnchorPane.topAnchor="14.0">
+                        </ImageView>
+                        <ImageView fx:id="seis" fitHeight="66.0" fitWidth="112.0" layoutX="17.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="17.0" AnchorPane.topAnchor="110.0">
+                        </ImageView>
+                        <ImageView fx:id="siete" fitHeight="55.0" fitWidth="112.0" layoutX="16.0" layoutY="204.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="17.0" AnchorPane.topAnchor="204.0">
+                        </ImageView>
+                        <ImageView fx:id="ocho" fitHeight="55.0" fitWidth="112.0" layoutX="15.0" layoutY="293.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="293.0">
+                        </ImageView>
+                        <Label fx:id="l5" layoutX="15.0" layoutY="80.0" text="Label" textAlignment="CENTER" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+                        <Label fx:id="l6" layoutX="16.0" layoutY="176.0" text="Label" textAlignment="CENTER" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="14.0" />
+                        <Label fx:id="l7" layoutX="16.0" layoutY="271.0" text="Label" textAlignment="CENTER" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="14.0" />
+                        <Label fx:id="l8" layoutX="15.0" layoutY="348.0" text="Label" textAlignment="CENTER" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+                     </children></AnchorPane>
+                  <AnchorPane layoutX="142.0" layoutY="40.0" prefHeight="435.0" prefWidth="625.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="142.0" AnchorPane.rightAnchor="139.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <GridPane prefHeight="435.0" prefWidth="625.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Button fx:id="boton0"  onAction="#presionado" prefHeight="61.0" prefWidth="110.0"  text="A" />
+                              <Button fx:id="boton1"  onAction="#presionado" prefHeight="50.0" prefWidth="96.0"  GridPane.columnIndex="1" />
+                              <Button fx:id="boton2"  onAction="#presionado" prefHeight="54.0" prefWidth="83.0"  GridPane.columnIndex="2" />
+                              <Button fx:id="boton3"  onAction="#presionado" prefHeight="78.0" prefWidth="114.0"  GridPane.columnIndex="3" />
+                              <Button fx:id="boton4"  onAction="#presionado" prefHeight="89.0" prefWidth="104.0"  GridPane.columnIndex="4" />
+                              <Button fx:id="boton5"  onAction="#presionado" prefHeight="75.0" prefWidth="107.0"  GridPane.columnIndex="5" />
+                              <Button fx:id="boton6"  onAction="#presionado" prefHeight="68.0" prefWidth="96.0"  GridPane.columnIndex="6" />
+                              <Button fx:id="boton7"  onAction="#presionado" prefHeight="86.0" prefWidth="102.0"  GridPane.columnIndex="7" />
+                              <Button fx:id="boton8"  onAction="#presionado" prefHeight="106.0" prefWidth="149.0"  GridPane.rowIndex="1" />
+                              <Button fx:id="boton9"  onAction="#presionado" prefHeight="103.0" prefWidth="135.0"  GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <Button fx:id="boton10"  onAction="#presionado" prefHeight="75.0" prefWidth="113.0"  GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                              <Button fx:id="boton11"  onAction="#presionado" prefHeight="65.0" prefWidth="90.0"  GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                              <Button fx:id="boton12"  onAction="#presionado" prefHeight="61.0" prefWidth="91.0"  GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                              <Button fx:id="boton13"  onAction="#presionado" prefHeight="66.0" prefWidth="110.0"  GridPane.columnIndex="5" GridPane.rowIndex="1" />
+                              <Button fx:id="boton14"  onAction="#presionado" prefHeight="82.0" prefWidth="92.0"  GridPane.columnIndex="6" GridPane.rowIndex="1" />
+                              <Button fx:id="boton15"  onAction="#presionado" prefHeight="60.0" prefWidth="78.0"  GridPane.columnIndex="7" GridPane.rowIndex="1" />
+                              <Button fx:id="boton16"  onAction="#presionado" prefHeight="85.0" prefWidth="163.0"  GridPane.rowIndex="2" />
+                              <Button fx:id="boton17"  onAction="#presionado" prefHeight="81.0" prefWidth="125.0"  GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <Button fx:id="boton18"  onAction="#presionado" prefHeight="78.0" prefWidth="121.0"  GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                              <Button fx:id="boton19"  onAction="#presionado" prefHeight="59.0" prefWidth="99.0"  GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                              <Button fx:id="boton20"  onAction="#presionado" prefHeight="85.0" prefWidth="113.0"  GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                              <Button fx:id="boton21"  onAction="#presionado" prefHeight="85.0" prefWidth="112.0"  GridPane.columnIndex="5" GridPane.rowIndex="2" />
+                              <Button fx:id="boton22"  onAction="#presionado" prefHeight="83.0" prefWidth="105.0"  GridPane.columnIndex="6" GridPane.rowIndex="2" />
+                              <Button fx:id="boton23"  onAction="#presionado" prefHeight="88.0" prefWidth="92.0"  GridPane.columnIndex="7" GridPane.rowIndex="2" />
+                              <Button fx:id="boton24"  onAction="#presionado" prefHeight="96.0" prefWidth="131.0"  GridPane.rowIndex="3" />
+                              <Button fx:id="boton25"  onAction="#presionado" prefHeight="89.0" prefWidth="122.0"  GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                              <Button fx:id="boton26"  onAction="#presionado" prefHeight="89.0" prefWidth="133.0"  GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                              <Button fx:id="boton27"  onAction="#presionado" prefHeight="81.0" prefWidth="109.0"  GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                              <Button fx:id="boton28"  onAction="#presionado" prefHeight="103.0" prefWidth="114.0"  GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                              <Button fx:id="boton29"  onAction="#presionado" prefHeight="107.0" prefWidth="122.0"  GridPane.columnIndex="5" GridPane.rowIndex="3" />
+                              <Button fx:id="boton30"  onAction="#presionado" prefHeight="104.0" prefWidth="114.0"  GridPane.columnIndex="6" GridPane.rowIndex="3" />
+                              <Button fx:id="boton31"  onAction="#presionado" prefHeight="116.0" prefWidth="120.0"  GridPane.columnIndex="7" GridPane.rowIndex="3" />
+                              <Button fx:id="boton32"  onAction="#presionado" prefHeight="137.0" prefWidth="163.0"  GridPane.rowIndex="4" />
+                              <Button fx:id="boton33"  onAction="#presionado" prefHeight="147.0" prefWidth="156.0"  GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                              <Button fx:id="boton34"  onAction="#presionado" prefHeight="138.0" prefWidth="109.0"  GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                              <Button fx:id="boton35"  onAction="#presionado" prefHeight="125.0" prefWidth="121.0"  GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                              <Button fx:id="boton36"  onAction="#presionado" prefHeight="137.0" prefWidth="127.0"  GridPane.columnIndex="4" GridPane.rowIndex="4" />
+                              <Button fx:id="boton37"  onAction="#presionado" prefHeight="159.0" prefWidth="163.0"  GridPane.columnIndex="5" GridPane.rowIndex="4" />
+                              <Button fx:id="boton38"  onAction="#presionado" prefHeight="140.0" prefWidth="151.0"  GridPane.columnIndex="6" GridPane.rowIndex="4" />
+                              <Button fx:id="boton39"  onAction="#presionado" prefHeight="138.0" prefWidth="148.0"  GridPane.columnIndex="7" GridPane.rowIndex="4" />
+                              <Button fx:id="boton40"  onAction="#presionado" prefHeight="104.0" prefWidth="155.0"  GridPane.rowIndex="5" />
+                              <Button fx:id="boton41"  onAction="#presionado" prefHeight="101.0" prefWidth="152.0"  GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                              <Button fx:id="boton42"  onAction="#presionado" prefHeight="94.0" prefWidth="143.0"  GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                              <Button fx:id="boton43"  onAction="#presionado" prefHeight="103.0" prefWidth="143.0"  GridPane.columnIndex="3" GridPane.rowIndex="5" />
+                              <Button fx:id="boton44"  onAction="#presionado" prefHeight="96.0" prefWidth="114.0"  GridPane.columnIndex="4" GridPane.rowIndex="5" />
+                              <Button fx:id="boton45"  onAction="#presionado" prefHeight="109.0" prefWidth="129.0"  GridPane.columnIndex="5" GridPane.rowIndex="5" />
+                              <Button fx:id="boton46"  onAction="#presionado" prefHeight="98.0" prefWidth="107.0"  GridPane.columnIndex="6" GridPane.rowIndex="5" />
+                              <Button fx:id="boton47"  onAction="#presionado" prefHeight="100.0" prefWidth="109.0"  GridPane.columnIndex="7" GridPane.rowIndex="5" />
+                              <Button fx:id="boton48"  onAction="#presionado" prefHeight="103.0" prefWidth="144.0"  GridPane.rowIndex="6" />
+                              <Button fx:id="boton49"  onAction="#presionado" prefHeight="92.0" prefWidth="147.0"  GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                              <Button fx:id="boton50"  onAction="#presionado" prefHeight="96.0" prefWidth="130.0"  GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                              <Button fx:id="boton51"  onAction="#presionado" prefHeight="55.0" prefWidth="114.0"  GridPane.columnIndex="3" GridPane.rowIndex="6" />
+                              <Button fx:id="boton52"  onAction="#presionado" prefHeight="74.0" prefWidth="120.0"  GridPane.columnIndex="4" GridPane.rowIndex="6" />
+                              <Button fx:id="boton53"  onAction="#presionado" prefHeight="78.0" prefWidth="126.0"  GridPane.columnIndex="5" GridPane.rowIndex="6" />
+                              <Button fx:id="boton54"  onAction="#presionado" prefHeight="99.0" prefWidth="112.0"  GridPane.columnIndex="6" GridPane.rowIndex="6" />
+                              <Button fx:id="boton55"  onAction="#presionado" prefHeight="71.0" prefWidth="92.0"  GridPane.columnIndex="7" GridPane.rowIndex="6" />
+                              <Button fx:id="boton56"  onAction="#presionado" prefHeight="67.0" prefWidth="141.0"  GridPane.rowIndex="7" />
+                              <Button fx:id="boton57"  onAction="#presionado" prefHeight="81.0" prefWidth="135.0"  GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                              <Button fx:id="boton58"  onAction="#presionado" prefHeight="95.0" prefWidth="117.0"  GridPane.columnIndex="2" GridPane.rowIndex="7" />
+                              <Button fx:id="boton59"  onAction="#presionado" prefHeight="89.0" prefWidth="106.0"  GridPane.columnIndex="3" GridPane.rowIndex="7" />
+                              <Button fx:id="boton60"  onAction="#presionado" prefHeight="70.0" prefWidth="77.0"  GridPane.columnIndex="4" GridPane.rowIndex="7" />
+                              <Button fx:id="boton62"  onAction="#presionado" prefHeight="93.0" prefWidth="105.0"  GridPane.columnIndex="6" GridPane.rowIndex="7" />
+                              <Button fx:id="boton61"  onAction="#presionado" prefHeight="70.0" prefWidth="86.0"  GridPane.columnIndex="5" GridPane.rowIndex="7" />
+                              <Button fx:id="boton63"  onAction="#presionado" prefHeight="101.0" prefWidth="104.0"  GridPane.columnIndex="7" GridPane.rowIndex="7" />
+                           </children>
+                        </GridPane>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

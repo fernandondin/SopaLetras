@@ -1,0 +1,42 @@
+*{
+    -fx-font-family:comfortaa;
+}
+#izquierda,#derecha,#inicio{
+    -fx-background-color:linear-gradient(#9EFBD3 0%, #57E9F2 48%, #45D4FB 100%);
+}
+#centro{
+    -fx-background-color: linear-gradient(#FFFEFF 0%, #D7FFFE 100%);
+}
+.button{
+    -fx-font-size:16;
+    -fx-background-color: transparent;
+}
+.label{
+    -fx-font-size:17;
+}
+.button:hover{
+    -fx-font-size:30;
+    -fx-cursor:hand;
+    -fx-background-color:linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+}
+.button:pressed{
+    -fx-background-color:linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
+    -fx-font-size:35;
+}
+#checa,#abandonar{
+    -fx-border-color:#68aec3;
+    -fx-cursor: hand;
+    -fx-border-width: 2;
+}
+#checa:hover,#abandonar:hover{
+    -fx-font-size:16;
+    -fx-background-color:#005670;  
+}
+#uno{
+
+}
+#uno:hover,#dos:hover,#tres:hover,#cuatro:hover,#cinco:hover,#seis:hover,#siete:hover,#ocho:hover{
+    -fx-scale-x:1.5;
+    -fx-scale-y:1.5;
+    -fx-rotate:15;
+}
